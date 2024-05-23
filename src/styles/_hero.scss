@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+.hero {
+    background-image: none;
+    padding: 5.6vw;
+    min-height: 50vh;
+    background: rgba(0, 0, 0, 0.60);
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 720px;
+        padding-top: 100px;
+
+        .titulo_principal {
+            font-size: 55px;
+        }
+
+        .text {
+            display: flex;
+            b{
+                padding: 6px;
+            }
+        }
+
+        .button__play {
+            margin: 0 auto;
+            padding-top: 100px;
+            a {
+                padding: 24px 28px;
+                text-decoration: none;
+                color: variaveis.$corTextoSecundario;
+            }
+        }
+    }
+}
