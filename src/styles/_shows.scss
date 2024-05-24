@@ -4,13 +4,12 @@
 .shows {
     padding: 5.6vw;
     min-height: 50vh;
-    background: rgba(0, 0, 0, 0.60);
-    height: 100%;
+    
 
     &__list {
         margin-top: 40px;
         display: none;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 24px;
         list-style: none;
 
@@ -47,7 +46,7 @@
             border-bottom: 5px solid transparent;
 
             &--is-active {
-                border-bottom: variaveis.$corTextoSecundario;
+                border-bottom: 5px solid variaveis.$corTextoSecundario;
             }
         }
     }

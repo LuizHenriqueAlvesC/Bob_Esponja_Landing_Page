@@ -13,12 +13,8 @@
 
 
 body {
-    width: 100%;
     background-color: variaveis.$corDeFundo;
-    background-image: url(../images/svg/Hero_fundo.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 100%;
 }
 
 @mixin text($fontSize: 16px) {
@@ -100,11 +96,4 @@ body {
             color: variaveis.$corDeFundo;
         }
     }
-}
-
-.button-section {
-    background: rgba(0, 0, 0, 0.60);
-    line-height: 56px;
-    padding: 10px 40px;
-    letter-spacing: 1px;
 }
