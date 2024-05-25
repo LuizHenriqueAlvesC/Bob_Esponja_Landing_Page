@@ -8,6 +8,14 @@
     background-size: cover;
     background-position: center;
     margin: 0;
+
+    @media (max-width: 768px) {
+        background-image: url(../images/svg/Hero_fundo.svg);
+        padding-top: calc(50vw + 25px) ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -55px;
+    }
     
     &::before {
         content: '';
@@ -22,36 +30,64 @@
 
     &__content {
         position: relative;
-        z-index: 2;
+        z-index: 1;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        justify-content: center;
-        align-items: center;
-        max-width: 720px;
+        max-width: 1280px;
+        
         width: 100%;
-        padding-top: 360px;
+        padding-top: 120px;
 
-        .titulo_principal {
-            font-size: 55px;
-            padding-bottom: 24px;
+        @media (max-width:768px) {
+            padding-top:0;
+            max-width: 80%;
+            height: 50%;
         }
+
+        &__branding {
+            max-width: 320px;
+            padding-bottom: 50px;
+
+            @media (max-width: 768px) {
+                max-width: 180px;
+            }
+        }
+
+        
 
         .text {
             display: flex;
-
+            max-width: 720px;
             b {
                 padding: 6px;
+
+            }
+            @media (max-width:768px) {
+                max-width: 500px;
+
+
             }
         }
 
         .text-sobre{
             padding-top: 24px;
+            max-width: 720px;
+
+            @media (max-width:768px) {
+                max-width: 500px;
+                font-size: 14px;
+
+            }
         }
 
         .button__play {
-            margin: 0 auto;
+            max-width: 250px;
             padding-top: 100px;
+
+            @media (max-width:768px) {
+                padding-top: 20px;
+            }
 
             a {
                 padding: 24px 28px;

@@ -2,6 +2,8 @@
 @use 'variaveis';
 @use 'shows';
 @use 'header';
+@use 'footer';
+@use 'sobre';
 
 
 *{
@@ -95,5 +97,15 @@ body {
             background-color:rgba(variaveis.$corTextoSecundario, 0.8);;
             color: variaveis.$corDeFundo;
         }
+    }
+}
+
+.titulo_principal {
+    font-size: 55px;
+    padding-bottom: 24px;
+    color: variaveis.$corTextoSecundario;
+
+    @media (max-width:768px) {
+        font-size: 28px;
     }
 }

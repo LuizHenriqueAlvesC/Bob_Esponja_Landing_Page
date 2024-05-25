@@ -2,7 +2,24 @@
 
 .header {
     position: sticky;
-    background-color: variaveis.$corDeFundo;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(variaveis.$corDeFundo, 0.5);
+
+
+    &--is-hidden {
+        background-color: transparent;
+        transition: background-color .5s ease;
+
+        .header {
+            &__logo, &__links__item:first-child {
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity .5s ease;
+            }
+        }
+    }
 
     &__container {
         padding: 8px 36px;
@@ -19,9 +36,12 @@
     &__links {
         list-style: none;
         display: flex;
+        
 
         &__item {
+            display: flex;
             margin: 5px;
+            transition: opacity .5s ease;
         }
     }
 }
