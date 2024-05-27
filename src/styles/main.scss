@@ -75,6 +75,13 @@ body {
     border: 1px solid variaveis.$corDeFundoBotaoPrimario;
     text-decoration: none;
 
+    @media (max-width:768px) {
+        padding: 0;
+        max-width: 150px;
+        text-align: center;
+        
+    }
+
     &:hover {
         background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
     }

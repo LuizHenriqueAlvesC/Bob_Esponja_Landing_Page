@@ -3,18 +3,19 @@
 .hero {
     position: relative;
     height: 100vh;
-    background-image: url('../images/svg/Hero_fundo.svg');
+    background-image: url(../images/svg/hero_fundo.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin: 0;
 
     @media (max-width: 768px) {
-        background-image: url(../images/svg/Hero_fundo.svg);
-        padding-top: calc(50vw + 25px) ;
+        background-image: url(../images/svg/hero_fundo_mobile.svg);
+        padding-top: calc(50vw + 25px);
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: -55px;
+        margin-top: -80px;
+        width: 100%;
     }
     
     &::before {
@@ -43,6 +44,9 @@
             padding-top:0;
             max-width: 80%;
             height: 50%;
+            &:last-child{
+                align-items: center;
+            }
         }
 
         &__branding {
@@ -84,15 +88,23 @@
         .button__play {
             max-width: 250px;
             padding-top: 100px;
+            
 
             @media (max-width:768px) {
                 padding-top: 20px;
+                max-width: 150px;
             }
 
             a {
                 padding: 24px 28px;
                 text-decoration: none;
                 color: variaveis.$corTextoSecundario;
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    padding: 14px;
+                    
+                }
             }
         }
     }
