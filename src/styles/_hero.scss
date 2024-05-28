@@ -8,16 +8,14 @@
     background-size: cover;
     background-position: center;
     margin: 0;
-    background-color: rgba(variaveis.$corDeFundo, 0.1);
 
     @media (max-width: 768px) {
-        background-image: url(../images/svg/hero_fundo_mobile.svg);
+        background-image: url(../../src/images/svg/hero_mobile.jpeg);
         padding-top: calc(50vw + 25px);
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: -80px;
         width: 100%;
-        background-color: rgba(variaveis.$corDeFundo, 0.1);
     }
     
     &::before {
