@@ -1,0 +1,56 @@
+@use 'variaveis';
+
+.sobre {
+    margin: 100px 0;
+    max-width: 1280px;
+
+    @media (max-width:768px) {
+        max-width: 80%;
+    }
+
+    &__conteudo {
+        display: flex;
+        align-items: center;
+        justify-content:left;
+
+        @media (max-width:768px) {
+            display: block;
+            justify-content: center;
+            
+        }
+
+        .conteudo {
+            max-width: 720px;
+            margin: 0 55px;
+
+            @media (max-width:768px) {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 80%;
+            }
+        }
+
+        .data {
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width:768px) {
+                padding-left: 32px;
+                margin-top: 16px;
+                
+            }
+
+            p {
+                color: hsla(0, 0%, 100%, .6);
+                
+                .click {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}   
