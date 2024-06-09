@@ -5,16 +5,16 @@
 .hero {
     position: relative;
     height: 100vh;
-    background-image: url(../../src/images/svg/hero_fundo.svg);
+    background-image: url(../../src/images/svg/hero_fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin: 0;
 
     @media (max-width: 768px) {
-        background-image: url(../../src/images/svg/hero_mobile.jpeg);
+        background-image: url(../../src/images/svg/hero_mobile2.png);
         padding-top: calc(50vw + 25px);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         margin-top: -80px;
         width: 100%;
