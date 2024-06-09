@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @use 'variaveis';
 
 .footer {
@@ -34,41 +34,4 @@
     p {
         margin: 16px;
     }
-=======
-@use 'variaveis';
-
-.footer {
-    &__container {
-        max-width: 1024px;
-        width: 100%;
-        padding-left: 40px;
-
-        @media (max-width: 768px) {
-            padding-left: 20px;
-        }
-
-    }
-    &__logo {
-        width: 200px;
-        margin: 0 auto 10px;
-    }
-
-    &__links{
-        display: flex;
-        margin-bottom: 16px;
-        flex-direction: column;
-        list-style: none;
-        &__item {
-            display: inline-block;
-
-            a {
-                text-decoration: none;
-                padding: 0 16px;
-            }
-        }
-    }
-    p {
-        margin: 16px;
-    }
->>>>>>> origin/main
 }
