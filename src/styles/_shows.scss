@@ -1,11 +1,10 @@
-<<<<<<< HEAD
-@use 'variaveis';
+// src/styles/_shows.scss
 
+@use 'variaveis';
 
 .shows {
     padding: 5.6vw;
     min-height: 50vh;
-    
     
     &__list {
         margin-top: 40px;
@@ -27,8 +26,6 @@
                 max-width: 100%;
                 border-radius: 4px;
                 cursor: pointer;
-                
-
             }
             &__text {
                 margin-left: 6px;
@@ -36,12 +33,9 @@
         }
     }
     
-
     &__tabs {
         display: flex;
         justify-content: center;
-
-        
 
         &__button {
             color: variaveis.$corTextoSecundario;
@@ -62,69 +56,4 @@
             }
         }
     }
-=======
-@use 'variaveis';
-
-
-.shows {
-    padding: 5.6vw;
-    min-height: 50vh;
-    
-    
-    &__list {
-        margin-top: 40px;
-        display: none;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 24px;
-        list-style: none;
-        
-        @media (max-width: 768px) {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        &--is-active {
-            display: grid;
-        }
-
-        &__item {
-            img {
-                max-width: 100%;
-                border-radius: 4px;
-                cursor: pointer;
-                
-
-            }
-            &__text {
-                margin-left: 6px;
-            }
-        }
-    }
-    
-
-    &__tabs {
-        display: flex;
-        justify-content: center;
-
-        
-
-        &__button {
-            color: variaveis.$corTextoSecundario;
-            font-size: 20px;
-            border: none;
-            padding-bottom: 5px;
-            background: none;
-            margin: 0 1vw;
-            cursor: pointer;
-            border-bottom: 5px solid transparent;
-
-            &--is-active {
-                border-color: variaveis.$corTextoSecundario;
-            }
-
-            @media (max-width: 768px) {
-                font-size: 16px;
-            }
-        }
-    }
->>>>>>> origin/main
 }
